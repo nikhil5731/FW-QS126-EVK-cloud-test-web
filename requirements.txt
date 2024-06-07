@@ -1,0 +1,4 @@
+autologging
+bleak
+matplotlib
+numpy

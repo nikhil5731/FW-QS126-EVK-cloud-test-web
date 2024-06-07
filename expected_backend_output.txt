@@ -1,0 +1,123 @@
+# The format of this file is: INPUT /n OUTPUT/n/n
+# This file is to test the API
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0f\x00\xd6\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 58.843117775474624, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbf\x00\x00\x00\x00\x00\x00\x00\x00\xbf\x00\x00\x00\x00\x00\x00\x0e\x00\xa2\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002617801047120419, 'LinkMargin': 47.16431012989253, 'Throughput': 97792.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00\xa4\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 47.8024457102098, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00b\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 26.501878523966973, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00,\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -0.08356755526726621, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x02\x00\x00\x00\x00\xbe\x00\x00\x02\x00\x00\x00\x0e\x00\x18\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 4.111842105263158e-05, 'PER': 0.010526315789473684, 'PMDR': 0.010526315789473684, 'Latency': 0.002631578947368421, 'LinkMargin': -3.5350828679885513, 'Throughput': 96256.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00@\x00\x00\x00~\x00\x00\x00^\x00\x00\x00\x00~\x00\x00v\x01\x00\x00\x0e\x00\x14\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.011594742063492064, 'PER': 0.746031746031746, 'PMDR': 0.8315789473684211, 'Latency': 0.003968253968253968, 'LinkMargin': -2.7031257083902216, 'Throughput': 16384.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x002\x00\x00\x00\x07\x00\x00\x00\x07\x00\x00\x00\x00\x07\x00\x00k\x00\x00\x00\x0e\x00\x10\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.05970982142857143, 'PER': 1.0, 'PMDR': 1.0, 'Latency': 0.07142857142857142, 'LinkMargin': -1.0625475526577124, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x11\x00\x00\x00_\x00\x00\x00\x1c\x00\x00\x00\x00_\x00\x00\x8c\x00\x00\x00\x0e\x00\x15\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.005756578947368421, 'PER': 0.29473684210526313, 'PMDR': 0.4017857142857143, 'Latency': 0.005263157894736842, 'LinkMargin': -2.99141190731343, 'Throughput': 34304.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00+\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -0.22377489939566625, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00\x96\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 44.218909596883556, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x13\x00\xeb\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': None, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00?\x00\x00\x00f\x00\x00\x00"\x00\x00\x00\x00f\x00\x00\xd4\x00\x00\x00\x0e\x00\x1a\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.008118872549019608, 'PER': 0.3333333333333333, 'PMDR': 0.5878787878787879, 'Latency': 0.004901960784313725, 'LinkMargin': -3.6359208631359117, 'Throughput': 34816.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\r\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\r\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x006\x00\x00\x00\x0f\x00\x00\x00\x0f\x00\x00\x00\x00\x0f\x00\x00\xab\x00\x00\x00\x0e\x00\x11\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.04453125, 'PER': 1.0, 'PMDR': 1.0, 'Latency': 0.03333333333333333, 'LinkMargin': -1.5393739263813664, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x0b\x00\x00\x00\xb3\x00\x00\x00)\x00\x00\x00\x00\xb3\x00\x00D\x00\x00\x00\x0e\x00\x16\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0014839385474860335, 'PER': 0.22905027932960895, 'PMDR': 0.2736842105263158, 'Latency': 0.002793296089385475, 'LinkMargin': -3.2264335893195026, 'Throughput': 70656.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00\x1e\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -3.308506742335211, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00+\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -0.22377489939566625, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00H\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 2.2603981267320545, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00*\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -0.4964865619535353, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x01\x00\x00\x00\xbe\x00\x00\x00\x0b\x00\x00\x00\x00\xbe\x00\x00\x0f\x00\x00\x00\x0e\x00\x17\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0003083881578947368, 'PER': 0.05789473684210526, 'PMDR': 0.06282722513089005, 'Latency': 0.002631578947368421, 'LinkMargin': -3.4075344580944837, 'Throughput': 91648.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x1e\x00\x00\x00\xa0\x00\x00\x00u\x00\x00\x00\x00\xa0\x00\x00\x17\x01\x00\x00\x0e\x00\x15\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0068115234375, 'PER': 0.73125, 'PMDR': 0.7736842105263158, 'Latency': 0.003125, 'LinkMargin': -2.99141190731343, 'Throughput': 22016.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00f\x00\x00\x00E\x00\x00\x00E\x00\x00\x00\x00E\x00\x00\x9a\x02\x00\x00\x0e\x00\x12\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.03770380434782609, 'PER': 1.0, 'PMDR': 1.0, 'Latency': 0.007246376811594203, 'LinkMargin': -1.9742088966447, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00Y\x00\x00\x00\x07\x00\x00\x00\x07\x00\x00\x00\x00\x07\x00\x00\x94\x00\x00\x00\x0e\x00\x10\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.08258928571428571, 'PER': 1.0, 'PMDR': 1.0, 'Latency': 0.07142857142857142, 'LinkMargin': -1.0625475526577124, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x0e\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x00\x04\x00\x00?\x00\x00\x00\x0e\x00\x11\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0615234375, 'PER': 1.0, 'PMDR': 1.0, 'Latency': 0.125, 'LinkMargin': -1.5393739263813664, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00:\x00\x00\x00\x81\x00\x00\x00_\x00\x00\x00\x00\x81\x00\x00\x9e\x01\x00\x00\x0e\x00\x14\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.012536337209302325, 'PER': 0.7364341085271318, 'PMDR': 0.8181818181818182, 'Latency': 0.003875968992248062, 'LinkMargin': -2.7031257083902216, 'Throughput': 17408.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x06\x00\x00\x00\x00\xbe\x00\x00\x07\x00\x00\x00\x0e\x00\x1d\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0001439144736842105, 'PER': 0.031578947368421054, 'PMDR': 0.031578947368421054, 'Latency': 0.002631578947368421, 'LinkMargin': -3.4466151671178618, 'Throughput': 94208.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0f\x00k\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 30.133942725469474, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x01\x00\x00\x00\xbd\x00\x00\x00\x02\x00\x00\x00\x00\xbd\x00\x00\x02\x00\x00\x00\x0f\x00Y\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 4.1335978835978834e-05, 'PER': 0.010582010582010581, 'PMDR': 0.015789473684210527, 'Latency': 0.0026455026455026454, 'LinkMargin': 21.63882045311184, 'Throughput': 95744.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00T\x00\x00\x003\x00\x00\x002\x00\x00\x00\x003\x00\x00r\x01\x00\x00\x0e\x00\x12\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.028339460784313725, 'PER': 0.9803921568627451, 'PMDR': 0.9925925925925926, 'Latency': 0.00980392156862745, 'LinkMargin': -1.9742088966447, 'Throughput': 512.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0f\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x0c\x00\xff\x7f')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.5, 'PER': 1.0, 'PMDR': 1.0, 'Latency': None, 'LinkMargin': 0.0, 'Throughput': 0.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x04\x00\x00\x007\x00\x00\x00\x0c\x00\x00\x00\x007\x00\x006\x00\x00\x00\x0e\x00\x17\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0038352272727272727, 'PER': 0.21818181818181817, 'PMDR': 0.2711864406779661, 'Latency': 0.00909090909090909, 'LinkMargin': -3.4075344580944837, 'Throughput': 22016.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0e\x00+\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': -0.22377489939566625, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0f\x00\xa7\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': 48.846748865465116, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x0f\x00\xf0\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': None, 'Throughput': 97280.0}
+
+{'mac': '68:05:4E:56:8A:85', 'board_id': '08342018656805084E568A85000EBF31', 'py_version': '0.0.1', 'fw_version': '0.0.1', 'settings': bytearray(b'\x00  \xa1\x07\x00'), 'data': bytearray(b' \x00\x00\x00 \xa1\x07\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x00\x00\xbe\x00\x00\x00\x00\x00\x00\x10\x00\xf3\x00')}
+{'Bitrate': 208333, 'BytesPerPacket': 32, 'Duration': 0.5, 'BER': 0.0, 'PER': 0.0, 'PMDR': 0.0, 'Latency': 0.002631578947368421, 'LinkMargin': None, 'Throughput': 97280.0}
+
