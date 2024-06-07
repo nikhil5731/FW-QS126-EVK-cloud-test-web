@@ -6,7 +6,8 @@ import numpy as np
 import text
 from coms import *
 from evk import IxanaEVK
-import backend
+# import backend
+import apicall
 
 
 #################### EXAMPLE: MODE_STATS ####################
@@ -70,7 +71,7 @@ def example_mode_stats_rx(evk: IxanaEVK, save_dir: str, data_size: int, duration
         result_type, result_bytes = evk.data_rd()
 
         print(f'\n----------{i}: {repr(result_type)}----------')
-        reply = backend.send_stats_result(
+        reply = apicall.send_stats_result(
             **{k:str(v) for k,v in common_dict.items()},
             settings=field.to_bytes('little'),
             data=result_bytes
@@ -282,7 +283,7 @@ if __name__ == "__main__":
     import inspect
     from collections import defaultdict
 
-    DEVICES_PATH = 'devices.json'
+    DEVICES_PATH = 'local/devices.json'
     devices = read_devices(DEVICES_PATH)
 
     parser = argparse.ArgumentParser()
