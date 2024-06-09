@@ -2,7 +2,7 @@ import byteclass
 import numpy as np
 from dataclasses import dataclass
 import text
-
+import json
 from coms import IC_SETTING, FieldModeStatsRX
 from typing import Literal
 import rssi
@@ -55,7 +55,7 @@ class StatsRXReply:
         self.Bitrate = ic_settings.bitrate_hz
         self.BytesPerPacket = result.bytes_per_packet
         self.Duration = result.acq_duration_us / 1e6
-        print ('calculated RSSI')
+        #print ('calculated RSSI') # Comment for prod
         # PER was PwE
         # PMDR was PER+PwE
         self.BER = result.bit_errors / result.bit_count if result.bit_count else 0.5
@@ -82,18 +82,29 @@ def convert_stats_result(mac: str, board_id: str, py_version: str, fw_version: s
     settings = byteclass.from_bytes(FieldModeStatsRX, settings_b)
     result = byteclass.from_bytes(StatsRXResult, data)
 
-    print(text.style('SETTINGS', text.STYLE.FG_RED))
-    for k, v in vars(settings).items():
-        print(text.style(f'{k}: {v}', text.STYLE.FG_RED))
-    print(text.style('RESULT', text.STYLE.FG_RED))
-    for k, v in vars(result).items():
-        print(text.style(f'{k}: {v}', text.STYLE.FG_RED))
+    # comment print for prod
+
+    # print(text.style('SETTINGS', text.STYLE.FG_RED))
+    # for k, v in vars(settings).items():
+    #     print(text.style(f'{k}: {v}', text.STYLE.FG_RED))
+    # print(text.style('RESULT', text.STYLE.FG_RED))
+    # for k, v in vars(result).items():
+    #     print(text.style(f'{k}: {v}', text.STYLE.FG_RED))
 
     response = vars(StatsRXReply(settings, result))
 
-    print('response sent')
+    #print(type(response))
 
-    future = executor.submit(
-        push_json(response))
+    input = {'mac': mac, 'board_id': board_id, 'py_version': py_version, 'fw_version': fw_version}
+
+    response_dict = dict(response)
+
+    response_dict.update(input)
+
+    #print('response sent')
+
+    # future = executor.submit(push_json(response))
+
+    future = executor.submit(push_json(response_dict))
 
     return response
