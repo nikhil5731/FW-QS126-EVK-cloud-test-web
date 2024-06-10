@@ -41,7 +41,7 @@ def send_stats_result(mac: str, board_id: str, py_version: str, fw_version: str,
     print(text.style(f'py_version: {py_version}', text.STYLE.FG_RED))
     print(text.style(f'fw_version: {fw_version}', text.STYLE.FG_RED))
 
-    url = "http://127.0.0.1:5000/processdev"
+    url = "http://3.25.191.180/processdev"
 
     myobj = {
 	"mac": mac,
