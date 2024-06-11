@@ -1,0 +1,56 @@
+{
+  "averaging": 3,
+  "plots": [
+    {
+      "y_label": "BER",
+      "y_scale": "log",
+      "y_min": 1e-6,
+      "y_max": 1e-1,
+      "format": null,
+      "data_keys": [
+        "BER"
+      ]
+    },
+    {
+      "y_label": "PER",
+      "y_scale": "linear",
+      "y_min": 0.0,
+      "y_max": 1.0,
+      "format": "%",
+      "data_keys": [
+        "PER",
+        "PMDR"
+      ]
+    },
+    {
+      "y_label": "dBm",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "LinkMargin"
+      ]
+    },
+    {
+      "y_label": "s",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "Latency"
+      ]
+    },
+    {
+      "y_label": "bps",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "Throughput"
+      ]
+    }
+  ]
+}
