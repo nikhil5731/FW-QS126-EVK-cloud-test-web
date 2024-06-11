@@ -1,35 +1,55 @@
 {
+  "averaging": 3,
   "plots": [
     {
-      "y_label": "rssi (count)",
-      "y_scale": "linear",
-      "data_keys": [
-        "rssi_avg",
-        "rssi_base_avg"
-      ]
-    },
-    {
-      "y_label": "rssi (uV)",
-      "y_scale": "linear",
-      "data_keys": [
-        "rssi_avg_uv",
-        "rssi_base_avg_uv"
-      ]
-    },
-    {
-      "y_label": "Link Margin (dB20)",
-      "y_scale": "linear",
-      "data_keys": [
-        "LM"
-      ]
-    },
-    {
-      "y_label": "BER & PER",
+      "y_label": "BER",
       "y_scale": "log",
+      "y_min": 1e-6,
+      "y_max": 1e-1,
+      "format": null,
       "data_keys": [
-        "BER",
+        "BER"
+      ]
+    },
+    {
+      "y_label": "PER",
+      "y_scale": "linear",
+      "y_min": 0.0,
+      "y_max": 1.0,
+      "format": "%",
+      "data_keys": [
         "PER",
-        "PER+PwE"
+        "PMDR"
+      ]
+    },
+    {
+      "y_label": "dBm",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "LinkMargin"
+      ]
+    },
+    {
+      "y_label": "s",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "Latency"
+      ]
+    },
+    {
+      "y_label": "bps",
+      "y_scale": "linear",
+      "y_min": null,
+      "y_max": null,
+      "format": null,
+      "data_keys": [
+        "Throughput"
       ]
     }
   ]
