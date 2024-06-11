@@ -1,0 +1,172 @@
+2024-06-10 12:56:13,637	TRACE	evk.IxanaEVK.__init__	CALL *('68:05:16:46:BF:24',) **{}
+2024-06-10 12:56:13,639	DEBUG	asyncio.__init__	Using proactor: IocpProactor
+2024-06-10 12:56:13,911	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 19:23:8E:1A:D4:20: .
+2024-06-10 12:56:13,925	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 44:50:8E:B5:A0:0A: .
+2024-06-10 12:56:14,031	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:08:FC:E1:F4:00: .
+2024-06-10 12:56:14,136	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 5D:87:DF:22:4A:16: .
+2024-06-10 12:56:14,142	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 5D:87:DF:22:4A:16: LE_WH-1000XM5.
+2024-06-10 12:56:14,149	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: .
+2024-06-10 12:56:14,153	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: Ixana YR22 EVK.
+2024-06-10 12:56:14,158	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: .
+2024-06-10 12:56:14,162	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: Amdtp.
+2024-06-10 12:56:14,168	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:02:15:5A:DB:AC: .
+2024-06-10 12:56:14,170	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:02:15:5A:DB:AC: Amdtp.
+2024-06-10 12:56:14,255	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: .
+2024-06-10 12:56:14,258	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: Amdtp.
+2024-06-10 12:56:14,264	DEBUG	bleak.backends.winrt.scanner._received_handler	Received FA:0D:AC:D7:F5:8E: .
+2024-06-10 12:56:14,268	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 1A:3F:07:A7:EF:D0: .
+2024-06-10 12:56:14,273	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: .
+2024-06-10 12:56:14,277	DEBUG	bleak.backends.winrt.scanner._stopped_handler	10 devices found. Watcher status: <BluetoothLEAdvertisementWatcherStatus.STOPPED: 3>.
+2024-06-10 12:56:14,303	DEBUG	bleak.backends.winrt.client.connect	Connecting to BLE device @ 68:05:16:46:BF:24
+2024-06-10 12:56:14,475	DEBUG	bleak.backends.winrt.client.get_services	getting services (service_cache_mode=None, cache_mode=None)...
+2024-06-10 12:56:15,714	DEBUG	bleak.backends.winrt.client.connect	max_pdu_size_changed event not received, using default
+2024-06-10 12:56:15,824	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.ACTIVE: 1>
+2024-06-10 12:56:15,851	DEBUG	bleak.backends.winrt.client.max_pdu_size_changed_handler	max_pdu_size_changed_handler: 247
+2024-06-10 12:56:16,272	TRACE	evk.IxanaEVK.mode_reset	CALL *() **{}
+2024-06-10 12:56:16,272	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x01\x00'),) **{}
+2024-06-10 12:56:16,301	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:16,803	TRACE	evk.IxanaEVK.data_enable	CALL *(False,) **{}
+2024-06-10 12:56:16,803	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x04\x00'),) **{}
+2024-06-10 12:56:16,826	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:16,826	TRACE	evk.IxanaEVK.data_enable	RETURN None
+2024-06-10 12:56:16,826	TRACE	evk.IxanaEVK.mode_reset	RETURN None
+2024-06-10 12:56:16,826	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.VERSION: 0>,) **{}
+2024-06-10 12:56:16,826	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x00\x00'),) **{}
+2024-06-10 12:56:16,856	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x00\x00\x00')
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK._read	CALL *(3,) **{}
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x00\x00\x01')
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x00\x00\x01')
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.BOARDID: 1>,) **{}
+2024-06-10 12:56:16,857	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x01\x00'),) **{}
+2024-06-10 12:56:16,885	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:16,885	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:16,886	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x01\x00\x00')
+2024-06-10 12:56:16,886	TRACE	evk.IxanaEVK._read	CALL *(16,) **{}
+2024-06-10 12:56:16,886	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x18 4\x08\x02\x05he$\xbfF\x161\xbf\x0e\x00')
+2024-06-10 12:56:16,887	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x18 4\x08\x02\x05he$\xbfF\x161\xbf\x0e\x00')
+2024-06-10 12:56:16,887	TRACE	evk.IxanaEVK.__init__	RETURN None
+2024-06-10 12:56:16,887	TRACE	evk.IxanaEVK.mode_rd	CALL *() **{}
+2024-06-10 12:56:16,887	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.MODE: 3>,) **{}
+2024-06-10 12:56:16,887	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x00'),) **{}
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x03\x00\x00')
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x00')
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x00')
+2024-06-10 12:56:16,916	TRACE	evk.IxanaEVK.mode_rd	RETURN <MODE.NONE: 0>
+2024-06-10 12:56:16,923	TRACE	evk.IxanaEVK.mode_start	CALL *(<MODE.STATS_RX: 2>, <FIELD_NAME.MODE_STATS_RX: 5>, FieldModeStatsRX(icsetting_bitrate=0, data_size=32, duration_us=1000000)) **{}
+2024-06-10 12:56:16,923	TRACE	evk.IxanaEVK.mode_reset	CALL *() **{}
+2024-06-10 12:56:16,923	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x01\x00'),) **{}
+2024-06-10 12:56:16,961	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,462	TRACE	evk.IxanaEVK.data_enable	CALL *(False,) **{}
+2024-06-10 12:56:17,462	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x04\x00'),) **{}
+2024-06-10 12:56:17,485	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,485	TRACE	evk.IxanaEVK.data_enable	RETURN None
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK.mode_reset	RETURN None
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK.mode_wrrd	CALL *(<MODE.NONE: 0>,) **{}
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK.mode_wr	CALL *(<MODE.NONE: 0>,) **{}
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK.field_wr	CALL *(<FIELD_NAME.MODE: 3>, <MODE.NONE: 0>) **{}
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK._field_data_format	CALL *(<MODE.NONE: 0>,) **{}
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK._field_data_format	RETURN b'\x00'
+2024-06-10 12:56:17,486	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x01\x00'),) **{}
+2024-06-10 12:56:17,516	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,516	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:17,517	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x03\x01\x00')
+2024-06-10 12:56:17,517	TRACE	evk.IxanaEVK.field_wr	RETURN None
+2024-06-10 12:56:17,518	TRACE	evk.IxanaEVK.mode_wr	RETURN None
+2024-06-10 12:56:17,518	TRACE	evk.IxanaEVK.mode_rd	CALL *() **{}
+2024-06-10 12:56:17,518	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.MODE: 3>,) **{}
+2024-06-10 12:56:17,518	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x00'),) **{}
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x03\x00\x00')
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x00')
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x00')
+2024-06-10 12:56:17,560	TRACE	evk.IxanaEVK.mode_rd	RETURN <MODE.NONE: 0>
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK.mode_wrrd	RETURN None
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK.field_wrrd	CALL *(<FIELD_NAME.MODE_STATS_RX: 5>, bytearray(b'\x00 @B\x0f\x00')) **{}
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK.field_wr	CALL *(<FIELD_NAME.MODE_STATS_RX: 5>, bytearray(b'\x00 @B\x0f\x00')) **{}
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK._field_data_format	CALL *(bytearray(b'\x00 @B\x0f\x00'),) **{}
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK._field_data_format	RETURN bytearray(b'\x00 @B\x0f\x00')
+2024-06-10 12:56:17,562	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x05\x01\x00 @B\x0f\x00'),) **{}
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x05\x01\x00')
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK.field_wr	RETURN None
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._field_data_format	CALL *(bytearray(b'\x00 @B\x0f\x00'),) **{}
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._field_data_format	RETURN bytearray(b'\x00 @B\x0f\x00')
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.MODE_STATS_RX: 5>,) **{}
+2024-06-10 12:56:17,592	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x05\x00'),) **{}
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x05\x00\x00')
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK._read	CALL *(6,) **{}
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x00 @B\x0f\x00')
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x00 @B\x0f\x00')
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK.field_wrrd	RETURN None
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK.mode_wrrd	CALL *(<MODE.STATS_RX: 2>,) **{}
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK.mode_wr	CALL *(<MODE.STATS_RX: 2>,) **{}
+2024-06-10 12:56:17,621	TRACE	evk.IxanaEVK.field_wr	CALL *(<FIELD_NAME.MODE: 3>, <MODE.STATS_RX: 2>) **{}
+2024-06-10 12:56:17,623	TRACE	evk.IxanaEVK._field_data_format	CALL *(<MODE.STATS_RX: 2>,) **{}
+2024-06-10 12:56:17,623	TRACE	evk.IxanaEVK._field_data_format	RETURN b'\x02'
+2024-06-10 12:56:17,623	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x01\x02'),) **{}
+2024-06-10 12:56:17,666	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:17,666	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:18,018	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x03\x01\x00')
+2024-06-10 12:56:18,018	TRACE	evk.IxanaEVK.field_wr	RETURN None
+2024-06-10 12:56:18,019	TRACE	evk.IxanaEVK.mode_wr	RETURN None
+2024-06-10 12:56:18,019	TRACE	evk.IxanaEVK.mode_rd	CALL *() **{}
+2024-06-10 12:56:18,019	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.MODE: 3>,) **{}
+2024-06-10 12:56:18,019	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x03\x00'),) **{}
+2024-06-10 12:56:18,063	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x03\x00\x00')
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02')
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x02')
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.mode_rd	RETURN <MODE.STATS_RX: 2>
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.mode_wrrd	RETURN None
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.check_ic_status	CALL *() **{}
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.icstatus_rd	CALL *() **{}
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK.field_rd	CALL *(<FIELD_NAME.ICSTATUS: 2>,) **{}
+2024-06-10 12:56:18,065	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x00\x02\x00'),) **{}
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK._read	CALL *(4,) **{}
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02\x02\x00\x00')
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x05')
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK.field_rd	RETURN bytearray(b'\x05')
+2024-06-10 12:56:18,110	TRACE	evk.IxanaEVK.icstatus_rd	RETURN <IC_STATUS.SUCCESS: 5>
+2024-06-10 12:56:18,111	TRACE	evk.IxanaEVK.check_ic_status	RETURN None
+2024-06-10 12:56:18,111	TRACE	evk.IxanaEVK.data_enable	CALL *(True,) **{}
+2024-06-10 12:56:18,111	TRACE	evk.IxanaEVK._write	CALL *(bytearray(b'\x04\x01'),) **{}
+2024-06-10 12:56:18,152	TRACE	evk.IxanaEVK._write	RETURN None
+2024-06-10 12:56:18,153	TRACE	evk.IxanaEVK.data_enable	RETURN None
+2024-06-10 12:56:18,153	TRACE	evk.IxanaEVK.mode_start	RETURN None
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.data_rd	CALL *() **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	CALL *() **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x01')
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	RETURN 1
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	CALL *() **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	RETURN bytearray(b'\x02')
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	RETURN 2
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	CALL *() **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	CALL *(1,) **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	RETURN bytearray(b' ')
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.rd8	RETURN 32
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	CALL *(32,) **{}
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK._read	RETURN bytearray(b' \x00\x00\x00@B\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00%\x01\xff\x7f')
+2024-06-10 12:56:19,154	TRACE	evk.IxanaEVK.data_rd	RETURN (<MODE.STATS_RX: 2>, bytearray(b' \x00\x00\x00@B\x0f\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00%\x01\xff\x7f'))
+2024-06-10 12:56:19,162	DEBUG	urllib3.connectionpool._new_conn	Starting new HTTP connection (1): 3.25.191.180:80
+2024-06-10 12:56:19,955	DEBUG	urllib3.connectionpool._make_request	http://3.25.191.180:80 "POST /processdev HTTP/1.1" 500 265
+2024-06-10 12:56:20,045	DEBUG	bleak.backends.winrt.client.disconnect	Disconnecting from BLE device...
+2024-06-10 12:56:23,263	DEBUG	bleak.backends.winrt.client.max_pdu_size_changed_handler	max_pdu_size_changed_handler: 23
+2024-06-10 12:56:23,264	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.CLOSED: 0>
+2024-06-10 12:56:23,265	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing requester
+2024-06-10 12:56:23,265	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing session

@@ -1,0 +1,19 @@
+2024-06-10 17:26:04,704	TRACE	evk.IxanaEVK.__init__	CALL *('68:05:16:46:BF:24',) **{}
+2024-06-10 17:26:04,704	DEBUG	asyncio.__init__	Using proactor: IocpProactor
+2024-06-10 17:26:04,867	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 2B:C5:E1:85:D8:22: .
+2024-06-10 17:26:04,972	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 2B:C5:E1:85:D8:22: .
+2024-06-10 17:26:04,978	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:02:15:5A:DB:AC: .
+2024-06-10 17:26:04,983	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:06:34:3B:EF:9C: .
+2024-06-10 17:26:04,983	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:06:34:3B:EF:9C: Amdtp.
+2024-06-10 17:26:05,096	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:08:68:2E:01:9D: .
+2024-06-10 17:26:05,098	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:08:68:2E:01:9D: Amdtp.
+2024-06-10 17:26:05,216	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: .
+2024-06-10 17:26:05,217	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: Ixana YR22 EVK.
+2024-06-10 17:26:05,217	DEBUG	bleak.backends.winrt.scanner._stopped_handler	5 devices found. Watcher status: <BluetoothLEAdvertisementWatcherStatus.STOPPED: 3>.
+2024-06-10 17:26:05,228	DEBUG	bleak.backends.winrt.client.connect	Connecting to BLE device @ 68:05:16:46:BF:24
+2024-06-10 17:26:05,305	DEBUG	bleak.backends.winrt.client.get_services	getting services (service_cache_mode=None, cache_mode=None)...
+2024-06-10 17:26:06,379	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.ACTIVE: 1>
+2024-06-10 17:26:06,384	DEBUG	bleak.backends.winrt.client.connect	max_pdu_size_changed event not received, using default
+2024-06-10 17:26:06,509	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.CLOSED: 0>
+2024-06-10 17:26:06,509	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing requester
+2024-06-10 17:26:06,544	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing session

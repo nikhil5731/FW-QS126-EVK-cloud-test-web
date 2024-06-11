@@ -201,7 +201,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     arg_file_path: str = args.file_path
 
-    settings = get_json('local/config_plot.json')
+    settings = get_json('config_plot.json')
 
     myplots = Plots(plot_settings=settings.plots)
     def auto_tight_layout(event):

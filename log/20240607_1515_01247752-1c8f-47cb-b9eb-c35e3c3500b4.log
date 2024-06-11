@@ -1,0 +1,44 @@
+2024-06-07 15:15:15,533	TRACE	evk.IxanaEVK.__init__	CALL *('68:05:16:46:BF:24',) **{}
+2024-06-07 15:15:15,533	DEBUG	asyncio.__init__	Using proactor: IocpProactor
+2024-06-07 15:15:15,687	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 55:E2:08:48:97:DE: .
+2024-06-07 15:15:15,694	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 55:E2:08:48:97:DE: .
+2024-06-07 15:15:15,694	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 15:1A:1F:38:16:44: .
+2024-06-07 15:15:15,695	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:04:31:9C:D5: .
+2024-06-07 15:15:15,696	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:04:31:9C:D5: Amdtp.
+2024-06-07 15:15:15,797	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:04:31:9C:D5: .
+2024-06-07 15:15:15,799	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:04:31:9C:D5: Amdtp.
+2024-06-07 15:15:15,806	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: .
+2024-06-07 15:15:15,807	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: Ixana YR22 EVK.
+2024-06-07 15:15:15,813	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: .
+2024-06-07 15:15:15,816	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:71:74:E0:2A: .
+2024-06-07 15:15:15,920	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:71:74:E0:2A: .
+2024-06-07 15:15:15,922	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:71:74:E0:2A: Amdtp.
+2024-06-07 15:15:15,925	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 78:7B:97:88:26:AD: LE_WH-1000XM5.
+2024-06-07 15:15:15,926	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 78:7B:97:88:26:AD: .
+2024-06-07 15:15:15,929	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: .
+2024-06-07 15:15:15,930	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: Amdtp.
+2024-06-07 15:15:16,040	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 78:7B:97:88:26:AD: .
+2024-06-07 15:15:16,042	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 78:7B:97:88:26:AD: .
+2024-06-07 15:15:16,046	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:08:FC:E1:F4:00: .
+2024-06-07 15:15:16,047	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:08:FC:E1:F4:00: Amdtp.
+2024-06-07 15:15:16,271	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 05:05:48:56:CC:6B: .
+2024-06-07 15:15:16,277	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:02:15:5A:DB:AC: .
+2024-06-07 15:15:16,278	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:02:15:5A:DB:AC: Amdtp.
+2024-06-07 15:15:16,400	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 3F:88:AE:5F:A9:EC: .
+2024-06-07 15:15:16,404	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:09:DD:FB:53:D2: .
+2024-06-07 15:15:16,406	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:09:DD:FB:53:D2: Amdtp.
+2024-06-07 15:15:16,507	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 3F:88:AE:5F:A9:EC: .
+2024-06-07 15:15:16,510	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 0E:80:7D:BD:24:33: .
+2024-06-07 15:15:16,513	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 3A:6F:DD:84:15:45: .
+2024-06-07 15:15:16,517	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:09:DD:FB:53:D2: .
+2024-06-07 15:15:16,518	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:09:DD:FB:53:D2: Amdtp.
+2024-06-07 15:15:16,522	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: .
+2024-06-07 15:15:16,523	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: Ixana YR22 EVK.
+2024-06-07 15:15:16,524	DEBUG	bleak.backends.winrt.scanner._stopped_handler	15 devices found. Watcher status: <BluetoothLEAdvertisementWatcherStatus.STOPPED: 3>.
+2024-06-07 15:15:16,535	DEBUG	bleak.backends.winrt.client.connect	Connecting to BLE device @ 68:05:16:46:BF:24
+2024-06-07 15:15:16,600	DEBUG	bleak.backends.winrt.client.get_services	getting services (service_cache_mode=None, cache_mode=None)...
+2024-06-07 15:15:17,702	DEBUG	bleak.backends.winrt.client.connect	max_pdu_size_changed event not received, using default
+2024-06-07 15:15:17,894	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.ACTIVE: 1>
+2024-06-07 15:15:18,013	DEBUG	bleak.backends.winrt.client.session_status_changed_event_handler	session_status_changed_event_handler: id: BluetoothLE#BluetoothLEe8:48:b8:c8:20:00-68:05:16:46:bf:24, error: <BluetoothError.SUCCESS: 0>, status: <GattSessionStatus.CLOSED: 0>
+2024-06-07 15:15:18,014	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing requester
+2024-06-07 15:15:18,045	DEBUG	bleak.backends.winrt.client.handle_disconnect	closing session

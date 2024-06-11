@@ -283,7 +283,7 @@ if __name__ == "__main__":
     import inspect
     from collections import defaultdict
 
-    DEVICES_PATH = 'local/devices.json'
+    DEVICES_PATH = 'devices.json'
     devices = read_devices(DEVICES_PATH)
 
     parser = argparse.ArgumentParser()

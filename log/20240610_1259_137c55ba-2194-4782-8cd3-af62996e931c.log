@@ -1,0 +1,24 @@
+2024-06-10 12:59:01,862	TRACE	evk.IxanaEVK.__init__	CALL *('68:05:16:46:BF:24',) **{}
+2024-06-10 12:59:01,864	DEBUG	asyncio.__init__	Using proactor: IocpProactor
+2024-06-10 12:59:02,119	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 29:50:E2:47:E8:7E: .
+2024-06-10 12:59:02,134	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 15:B0:DB:5A:61:DC: .
+2024-06-10 12:59:02,134	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 5D:87:DF:22:4A:16: LE_WH-1000XM5.
+2024-06-10 12:59:02,136	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 5D:87:DF:22:4A:16: .
+2024-06-10 12:59:02,229	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 5D:87:DF:22:4A:16: LE_WH-1000XM5.
+2024-06-10 12:59:02,234	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 15:B0:DB:5A:61:DC: .
+2024-06-10 12:59:02,359	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: .
+2024-06-10 12:59:02,364	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:07:2E:5B:6F:67: Amdtp.
+2024-06-10 12:59:02,367	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 19:23:8E:1A:D4:20: .
+2024-06-10 12:59:02,467	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 19:23:8E:1A:D4:20: .
+2024-06-10 12:59:02,477	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: .
+2024-06-10 12:59:02,482	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:E8:3F:09:02: Ixana YR22 EVK.
+2024-06-10 12:59:02,487	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 75:3B:E7:A6:5D:75: .
+2024-06-10 12:59:02,491	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 75:3B:E7:A6:5D:75: .
+2024-06-10 12:59:02,596	DEBUG	bleak.backends.winrt.scanner._received_handler	Received F8:77:B8:FF:80:9D: .
+2024-06-10 12:59:02,702	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:27:37:44:4B:71: .
+2024-06-10 12:59:02,710	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:71:74:E0:2A: .
+2024-06-10 12:59:02,714	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:03:71:74:E0:2A: Amdtp.
+2024-06-10 12:59:02,716	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 1F:2E:94:D2:CE:7B: .
+2024-06-10 12:59:02,720	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 34:B1:A2:BB:E4:07: .
+2024-06-10 12:59:02,726	DEBUG	bleak.backends.winrt.scanner._received_handler	Received 68:05:16:46:BF:24: Ixana YR22 EVK.
+2024-06-10 12:59:02,728	DEBUG	bleak.backends.winrt.scanner._stopped_handler	13 devices found. Watcher status: <BluetoothLEAdvertisementWatcherStatus.STOPPED: 3>.
