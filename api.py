@@ -1,6 +1,7 @@
 import json
 import numpy as np
 from convert import convert_stats_result
+from offsetdict import devices
 from flask import Flask, jsonify, request
 from flask.json.provider import DefaultJSONProvider
 
@@ -56,8 +57,8 @@ def call_convert():
  try: 
 
   result = convert_stats_result(mac, board_id, py_version, fw_version, settings, data)
-  print ('result received')
-  print(result)
+  #print ('result received') #Comment for prod
+  #print(result) #Comment for prod
   return jsonify(result)
 
  except Exception as e:
@@ -68,7 +69,19 @@ def call_convert():
   }
     
 
+# This route returns the calibration offset
 
+@app.route('/caloffset/<mac>', methods=['GET'])
+def get_device_by_mac(mac):
+ cal_offset = get_device(mac)
+ if cal_offset is None:
+  return jsonify(324)
+ return jsonify(cal_offset["offset"])
+
+    # return jsonify(cal_offset)
+
+def get_device(mac):
+ return next((e for e in devices if e['mac'] == mac), None)
 
 if __name__ == '__main__':
    app.run(port=5000)
