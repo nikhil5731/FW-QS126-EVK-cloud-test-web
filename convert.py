@@ -7,11 +7,19 @@ from coms import IC_SETTING, FieldModeStatsRX
 from typing import Literal
 import rssi
 import functools
+from collections import Counter
+from offsetdict import mac_avg
 from telemetrics import push_json, push_json_raw
 import concurrent.futures
 
+try:
+    import cPickle as pickle
+except ImportError:  # Python 3.x
+    import pickle
+
 executor = concurrent.futures.ThreadPoolExecutor()
 
+avg_length = 5
 
 @dataclass
 class ICSettings:
@@ -93,13 +101,76 @@ def convert_stats_result(mac: str, board_id: str, py_version: str, fw_version: s
 
     response = vars(StatsRXReply(settings, result))
 
-    #print(type(response))
+    # print(type(response))
 
     input = {'mac': mac, 'board_id': board_id, 'py_version': py_version, 'fw_version': fw_version}
 
+    # todo: Deal with none response. Done
+
     response_dict = dict(response)
 
+# The following code is to make sure we give certain customers averaged value 
+
+    if mac in mac_avg and None not in response_dict.values(): #We skip None values because it's hard to average when there are none values
+
+        # Define response store or load, if it already exists
+        try:
+
+            with open('data.p', 'rb') as fp:
+                response_store = pickle.load(fp)
+        except:
+            response_store = {}
+
+        # If the mac has already been tested
+
+        if mac in response_store.keys():
+            # print("stored data",len(response_store[mac]))
+            if len(response_store[mac])>avg_length-1:
+                response_store[mac].pop(0)  # Make sure the stored value is always equal to the avg length of averaging window
+                # print(type(update_mac_response),type(response_store[mac]))
+            # else :
+            update_mac_response = response_store[mac]
+
+            # Add the new response to the list of data being averaged over
+            
+            update_mac_response.append(response_dict) 
+            response_store[mac]=update_mac_response
+            # Use counter to sum over the list of dicts
+
+            Counter_sum = Counter()
+            for x in range(0,len(update_mac_response)):
+                Counter_sum.update(Counter(update_mac_response[x]))
+            # print("counter_sum",dict(Counter_sum))
+            return_dict = {key: value / len(update_mac_response) for key, value in Counter_sum.items()} # This is the average of the values
+            # avg_mac_response = dict(Counter_sum)
+        else:
+
+            # Create new response store if it doesn't already exists for the mac
+
+            update_mac_response = []
+            update_mac_response.append(response_dict)
+            response_store.update({mac:update_mac_response})
+            return_dict = response_dict
+
+        # convert_stats_result.store = response_store
+
+        # print("trying to write")
+        # print(type(response_store))
+        # with open('data.json', 'w') as outfile:
+        #     json.dump(response_store, outfile)
+        
+        with open('data.p', 'wb') as fp:
+            pickle.dump(response_store, fp, protocol=pickle.HIGHEST_PROTOCOL)
+
+            ## avg over the update_mac_response to create the response
+    else:
+        return_dict = response_dict
+
     response_dict.update(input)
+    return_dict.update(input)
+
+
+
 
     #print('response sent')
 
@@ -107,4 +178,4 @@ def convert_stats_result(mac: str, board_id: str, py_version: str, fw_version: s
 
     future = executor.submit(push_json(response_dict))
 
-    return response
+    return return_dict
