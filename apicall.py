@@ -74,14 +74,14 @@ def send_stats_result(mac: str, board_id: str, py_version: str, fw_version: str,
 
     url = "http://3.25.191.180/processdev"
 
-    # myobj = {
-	# "mac": mac,
-	# "board_id": board_id,
-	# "py_version": py_version,
-	# "fw_version": fw_version,
-	# "settings": repr(bytes_to_string(bytes(settings))),
-	# "data": repr(bytes_to_string(bytes(data)))
-    # }
+    myobj = {
+	"mac": mac,
+	"board_id": board_id,
+	"py_version": py_version,
+	"fw_version": fw_version,
+	"settings": bytes_to_string(bytes(settings)),
+	"data": bytes_to_string(bytes(data))
+    }
 
     try:
 
