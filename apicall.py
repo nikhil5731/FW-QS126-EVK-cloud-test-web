@@ -79,8 +79,8 @@ def send_stats_result(mac: str, board_id: str, py_version: str, fw_version: str,
 	"board_id": board_id,
 	"py_version": py_version,
 	"fw_version": fw_version,
-	"settings": bytes_to_string(bytes(settings)),
-	"data": bytes_to_string(bytes(data))
+	"settings": repr(bytes_to_string(bytes(settings))),
+	"data": repr(bytes_to_string(bytes(data)))
     }
 
     try:
@@ -106,10 +106,14 @@ def send_stats_result(mac: str, board_id: str, py_version: str, fw_version: str,
         'PMDR',
         'Latency'
     ]
-    for k,v in result.items():
+    result_dict = json.loads(result.content.decode())
+    print(result_dict)
+    print(type(result_dict))
+
+    for k,v in result_dict.items():
         if k not in CUSTOMER_KEYS:
             print(text.style(f'{k}: {v}', text.STYLE.FG_RED))
-    return {k:result[k] for k in CUSTOMER_KEYS}
+    return {k:result_dict[k] for k in CUSTOMER_KEYS}
 
 # def send_logs(mac: str, board_id: str, py_version: str, fw_version: str, logs: str):
 def send_logs():
