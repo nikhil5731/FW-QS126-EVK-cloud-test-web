@@ -62,6 +62,7 @@ class FieldModeStatsRX(byteclass.ByteClass):
     icsetting_bitrate: np.uint8
     data_size: np.uint8
     duration_us: np.uint32
+    cal_offset: np.uint16
 @dataclass
 class FieldModeSerial(byteclass.ByteClass):
     icsetting_bitrate: np.uint8
