@@ -18,7 +18,6 @@ def example_mode_stats_tx(evk: IxanaEVK, data_size: int):
     print('----------MODE STATS TX----------')
 
     field = FieldModeStatsTX(
-        icsetting_bitrate=evk.ic_setting,
         data_size=data_size
     )
     evk.mode_start(MODE.STATS_TX, FIELD_NAME.MODE_STATS_TX, field)
@@ -60,13 +59,15 @@ def example_mode_stats_rx(evk: IxanaEVK, save_dir: str, data_size: int, duration
     }
 
     field = FieldModeStatsRX(
-        icsetting_bitrate=evk.ic_setting,
+        ic_setting_id=evk.ic_setting_id,
         data_size=data_size,
-        duration_us=round(duration * 1e6)
+        duration_us=round(duration * 1e6),
+        cal_offset=apicall.get_cal_offset(**common_dict)
     )
     evk.mode_start(MODE.STATS_RX, FIELD_NAME.MODE_STATS_RX, field)
 
     for i in range(runs):
+        evk.data_wr(MODE.STATS_RX, bytearray())
         sleep(duration)
         result_type, result_bytes = evk.data_rd()
 
@@ -140,7 +141,6 @@ def _example_mode_serial_config(evk: IxanaEVK, ecc: str, mode: MODE_SERIAL_MODE)
 
 
     field = FieldModeSerial(
-        icsetting_bitrate=evk.ic_setting,
         ecc=ecc_bool,
         mode_serial_mode=mode
     )
@@ -202,7 +202,7 @@ def example_mode_led_tx(evk: IxanaEVK, colors: list[RGB], interval: float):
     print('----------MODE LED TX----------')
 
     field = FieldModeLED(
-        icsetting_bitrate=evk.ic_setting
+        dummy=0
     )
     evk.mode_start(MODE.LED_TX, FIELD_NAME.MODE_LED_TX, field)
 
@@ -216,7 +216,7 @@ def example_mode_led_rx(evk: IxanaEVK):
     print('----------MODE LED RX----------')
 
     field = FieldModeLED(
-        icsetting_bitrate=evk.ic_setting
+        dummy=0
     )
     evk.mode_start(MODE.LED_RX, FIELD_NAME.MODE_LED_RX, field)
 
@@ -283,14 +283,14 @@ if __name__ == "__main__":
     import inspect
     from collections import defaultdict
 
-    DEVICES_PATH = 'devices.json'
+    DEVICES_PATH = 'local/devices.json'
     devices = read_devices(DEVICES_PATH)
 
     parser = argparse.ArgumentParser()
     dev_mac_group = parser.add_mutually_exclusive_group(required=True)
     dev_mac_group.add_argument('--dev', help='name of device to connect to', choices=list(devices.keys()))
     dev_mac_group.add_argument('--mac', help='mac address of device to connect to')
-    parser.add_argument('--brsel', type=int, help='bitrate selection', default=IC_SETTING.LOW_SPEED.value, choices=[v for v in IC_SETTING][:-1])
+    parser.add_argument('--setting', type=int, help='ic settings id', default=0x12345678)
     subparsers = parser.add_subparsers(help='sub-command help')
 
     for mode, func in MODE_FUNCS.items():
@@ -317,7 +317,15 @@ if __name__ == "__main__":
     print(f'VERSION: {evk.version}')
     print(f'BOARD ID: {evk.boardid}')
     print(f'MODE: {repr(evk.mode_rd())}')
-    evk.ic_setting = IC_SETTING(args.brsel)
+    evk.ic_setting_id = args.setting
+
+    common_dict = {
+        'mac': evk.ser.mac_address,
+        'board_id': evk.boardid,
+        'py_version': evk.PYVERSION,
+        'fw_version': evk.version,
+    }
+    evk.field_wr(FIELD_NAME.ICSETTING, apicall.get_ic_setting(**common_dict, id=evk.ic_setting_id))
 
     if hasattr(args, 'func') and args.func:
         relevant_args = inspect.getfullargspec(args.func).annotations

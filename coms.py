@@ -17,6 +17,7 @@ class CMD_TYPE(IntEnum):
 class FIELD_NAME(IntEnum):
     VERSION = 0
     BOARDID = auto()
+    ICSETTING = auto()
     ICSTATUS = auto()
     MODE = auto()
     MODE_STATS_TX = auto()
@@ -24,10 +25,6 @@ class FIELD_NAME(IntEnum):
     MODE_SERIAL = auto()
     MODE_LED_TX = auto()
     MODE_LED_RX = auto()
-    TOTAL = auto()
-
-class IC_SETTING(IntEnum):
-    LOW_SPEED = 0
     TOTAL = auto()
 
 @dataclass
@@ -55,22 +52,20 @@ class FieldICStatus(byteclass.ByteClass):
     status: np.uint8
 @dataclass
 class FieldModeStatsTX(byteclass.ByteClass):
-    icsetting_bitrate: np.uint8
     data_size: np.uint8
 @dataclass
 class FieldModeStatsRX(byteclass.ByteClass):
-    icsetting_bitrate: np.uint8
+    ic_setting_id: np.uint32
     data_size: np.uint8
     duration_us: np.uint32
     cal_offset: np.uint16
 @dataclass
 class FieldModeSerial(byteclass.ByteClass):
-    icsetting_bitrate: np.uint8
     ecc: np.uint8
     mode_serial_mode: np.uint8
 @dataclass
 class FieldModeLED(byteclass.ByteClass):
-    icsetting_bitrate: np.uint8
+    dummy: np.uint8
 FIELD_TYPE: dict[FIELD_NAME, byteclass.ByteClass] = {
     FIELD_NAME.VERSION: FieldVersion,
     FIELD_NAME.BOARDID: FieldBoardID,

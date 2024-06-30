@@ -1,4 +1,4 @@
-from typing import Literal, TypeVar
+from typing import Literal, TypeVar, get_origin
 import numpy as np
 
 class ByteClass:
@@ -9,7 +9,16 @@ class ByteClass:
     '''
     def __post_init__(self):
         for var_name, var_type in self.__annotations__.items():
-            self.__dict__[var_name] = var_type(self.__dict__[var_name])
+            if get_origin(var_type) == np.ndarray:
+                args = var_type.__args__ if hasattr(var_type, '__args__') else []
+                
+                dtype = args[0] if len(args) >= 1 else None
+                length = args[1] if len(args) == 2 else None
+                self.__dict__[var_name] = np.asarray(self.__dict__[var_name], dtype=dtype)
+                if length is not None and len(self.__dict__[var_name]) != length:
+                    raise BufferError(f'expected length of {length}, got {len(self.__dict__[var_name])}')
+            else:
+                self.__dict__[var_name] = var_type(self.__dict__[var_name])
 
     def to_bytes(self, byteorder: Literal['little', 'big']) -> bytearray:
         result = bytearray()

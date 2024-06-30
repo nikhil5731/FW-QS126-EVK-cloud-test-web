@@ -1,6 +1,6 @@
 import json
 import numpy as np
-from convert import convert_stats_result
+from convert import convert_stats_result, ic_setting_bytes
 from offsetdict import devices
 from flask import Flask, jsonify, request
 from flask.json.provider import DefaultJSONProvider
@@ -50,23 +50,20 @@ def call_convert():
  data = event["data"]
  data = eval(f'"{data}"')
  data = bytearray(bytes(data, encoding='latin'))
- #print(data)
+#  print(data)
 
 
 
  try: 
 
   result = convert_stats_result(mac, board_id, py_version, fw_version, settings, data)
-  #print ('result received') #Comment for prod
+  print ('result received') #Comment for prod
   #print(result) #Comment for prod
   return jsonify(result)
 
  except Exception as e:
   print(e)
-  return {
-        'statusCode': 400,
-        'body': json.dumps(e)
-  }
+  return "error"
     
 
 # This route returns the calibration offset
@@ -82,6 +79,38 @@ def get_device_by_mac(mac):
 
 def get_device(mac):
  return next((e for e in devices if e['mac'] == mac), None)
+
+
+@app.route('/icsetting/<mac>/<id>', methods=['GET'])
+def ic_setting(id,mac):
+ 
+ try:
+    ret = ic_setting_bytes(int(id))
+    # print(ret)
+    return bytes_to_string(bytes(ret))
+ except Exception as e:
+    print("Either the MAC or the id is not correct. Please double check")
+    return "error"
+
+def bytes_to_string(data):
+  """
+  This function converts bytes data to a string representation
+  without decoding the bytes.
+
+  Args:
+      data: The bytes data to be converted.
+
+  Returns:
+      A string representation of the bytes data.
+  """
+  result = ""
+  for byte in data:
+      if byte == 32:  # ASCII code for space
+          result += " "
+      else:
+          result += "\\x{:02x}".format(byte)
+  return result
+
 
 if __name__ == '__main__':
    app.run(port=5000)

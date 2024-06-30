@@ -11,14 +11,14 @@ import autologging
 
 @autologging.traced
 class IxanaEVK:
-    PYVERSION = '0.0.1'
+    PYVERSION = '0.1.0'
     def __init__(self, mac: str) -> None:
         self.ser = ble.BLESerial(mac)
         self.ser.open()
         self.mode_reset()
         self.version = byteclass.from_bytes(FieldVersion, self.field_rd(FIELD_NAME.VERSION))
         self.boardid = byteclass.from_bytes(FieldBoardID, self.field_rd(FIELD_NAME.BOARDID))
-        self.ic_setting = IC_SETTING.LOW_SPEED
+        self.ic_setting_id = None
 
     def _write(self, data: bytearray | list[int]) -> None:
         self.ser.write(data)
@@ -62,7 +62,7 @@ class IxanaEVK:
             raise ValueError(f"invalid FIELD_NAME: {name}")
         
         data_list = self._field_data_format(data)
-        field_size = byteclass.nbytes(FIELD_TYPE[name])
+        field_size = 2027 if name == FIELD_NAME.ICSETTING else byteclass.nbytes(FIELD_TYPE[name])
         if len(data_list) != field_size:
             raise ValueError(f"invalid data size: {len(data_list)} != {field_size}")
         
@@ -74,6 +74,7 @@ class IxanaEVK:
             raise ValueError(f"field wr error: {response}")
         if response[3] != FIELD_STATUS.SUCCESS.value:
             raise ValueError(f'field wr error: {repr(FIELD_STATUS(response[3]))}')
+
 
     def field_wrrd(self, name: FIELD_NAME, data):
         self.field_wr(name, data)

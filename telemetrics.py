@@ -32,10 +32,10 @@ def push_json(json_data):
             'Content-Type': 'application/json'
         }
         response = requests.request("PUT", url, headers=headers, data=payload)
-        # print(response.text)  # Comment for prod
+        print(response.text)  # Comment for prod
         return True
     except Exception as e:
-        # print(f"An error occurred in push_json: {e}")  # Comment for prod
+        print(f"An error occurred in push_json: {e}")  # Comment for prod
         return False
 
 
